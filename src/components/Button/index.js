@@ -1,2 +1,2 @@
-import Card from './Card';
-export default Card;
+import Button from './Button';
+export default Button;

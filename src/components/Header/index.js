@@ -1,2 +1,2 @@
-import Card from './Card';
-export default Card;
+import Header from './Header';
+export default Header;

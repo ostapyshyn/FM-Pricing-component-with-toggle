@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button';
 
 export default function Card({ title, price, storage, users, limit }) {
   return (
@@ -8,6 +9,7 @@ export default function Card({ title, price, storage, users, limit }) {
       <p>{storage}</p>
       <p>{users}</p>
       <p>{limit}</p>
+      <Button />
     </section>
   );
 }
