@@ -1,13 +1,15 @@
 .button {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 13px;
   line-height: 16px;
   text-align: center;
   letter-spacing: 1.39286px;
-  color: #6d72de;
-  background: #ffffff;
+  color: #ffffff;
   border-radius: 6px;
   text-transform: uppercase;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  border-radius: 6px;
+  padding-block: 14px;
+  width: 100%;
 }

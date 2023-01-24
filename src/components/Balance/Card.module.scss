@@ -3,4 +3,56 @@
 .card {
   max-width: 350px;
   width: 100%;
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(212, 210, 244, 0.5);
+  border-radius: 10px 0px 0px 10px;
+  padding: 31px;
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #6e728e;
+    margin-bottom: 24px;
+  }
+  .cost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+
+    .dollar {
+      font-size: 40px;
+      line-height: 49px;
+      text-align: center;
+      letter-spacing: -1.2px;
+      color: #4a4d60;
+      margin-right: 8px;
+    }
+    .price {
+      font-weight: 700;
+      font-size: 72px;
+      line-height: 71px;
+      letter-spacing: -2.16px;
+      color: #4a4d60;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #6e728e;
+    // max-width: 288px;
+    margin: 0 auto;
+    margin-bottom: 12px;
+    mix-blend-mode: normal;
+    opacity: 0.25;
+  }
+  .storage {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+    color: #6e728e;
+    margin-bottom: 12px;
+  }
 }
