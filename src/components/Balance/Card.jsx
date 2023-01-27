@@ -1,8 +1,17 @@
-import React from 'react'
 import Button from '../Button'
 import styles from './Card.module.scss'
 
-export default function Card({ title, price, storage, users, limit, isPro, isLeft, isRight }) {
+export default function Card({
+  title,
+  price,
+  storage,
+  users,
+  limit,
+  isPro,
+  isLeft,
+  isRight,
+  isToggled,
+}) {
   const whiteColorStyle = {
     color: '#ffffff',
   }
@@ -34,7 +43,7 @@ export default function Card({ title, price, storage, users, limit, isPro, isLef
           $
         </span>
         <p className={styles.price} style={isPro && whiteColorStyle}>
-          {price}
+          {isToggled ? price : (price * 10.0 + 0.09).toFixed(2)}
         </p>
       </div>
 

@@ -6,6 +6,20 @@
     line-height: 39px;
     text-align: center;
     color: #6e728e;
+    margin-bottom: 40px;
+  }
+  .terms {
+    display: flex;
+    align-items: center;
+    .term {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 28px;
+      text-align: right;
+      color: #6e728e;
+      mix-blend-mode: normal;
+      opacity: 0.5;
+    }
   }
 
   margin-bottom: 64px;
