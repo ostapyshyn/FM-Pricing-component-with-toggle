@@ -2,22 +2,29 @@ import React from 'react'
 import Button from '../Button'
 import styles from './Card.module.scss'
 
-export default function Card({ title, price, storage, users, limit, isPro, isLeft }) {
+export default function Card({ title, price, storage, users, limit, isPro, isLeft, isRight }) {
   const whiteColorStyle = {
     color: '#ffffff',
   }
+  function getRadius() {
+    if (isLeft) {
+      return '10px 10px 0 0'
+    } else if (isRight) {
+      return '0 0 10px 10px'
+    } else {
+      return '10px'
+    }
+  }
+
   return (
     <section
-      className={styles.card}
+      className={`${styles.card}${isPro ? '' : ` ${styles.empty}`}`}
       style={
-        (isPro && {
+        isPro && {
           background: 'linear-gradient(135deg, #a2a7f0 0%, #696edd 100%)',
           paddingBlock: '54.5px',
-          borderRadius: '10px',
-        },
-        isLeft && {
-          borderRadius: '10px 10px 0 0',
-        })
+          borderRadius: getRadius(),
+        }
       }>
       <h2 className={styles.title} style={isPro && whiteColorStyle}>
         {title}

@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Header title="Our Pricing" />
       <main className="cards">
-        <Card title="Basic" price={19.99} storage={'500 GB'} users={2} limit={3} />
+        <Card title="Basic" price={19.99} storage={'500 GB'} users={2} limit={3} isLeft />
         <Card
           title="Professional"
           price={24.99}
@@ -16,7 +16,7 @@ function App() {
           limit={10}
           isPro={true}
         />
-        <Card title="Master" price={39.99} storage={'2 TB'} users={10} limit={20} />
+        <Card title="Master" price={39.99} storage={'2 TB'} users={10} limit={20} isRight />
       </main>
     </div>
   )
