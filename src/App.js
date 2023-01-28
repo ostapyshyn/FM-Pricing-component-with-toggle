@@ -16,7 +16,7 @@ function App() {
           storage={'500 GB'}
           users={2}
           limit={3}
-          isLeft
+          isLeft={true}
           isToggled={isToggled}
         />
         <Card

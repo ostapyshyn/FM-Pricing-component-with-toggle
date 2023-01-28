@@ -39,7 +39,7 @@
     }
   }
 
-  hr {
+  .hr {
     border: none;
     border-top: 1px solid #6e728e;
     // max-width: 288px;
@@ -56,4 +56,22 @@
     color: #6e728e;
     margin-bottom: 12px;
   }
+}
+
+.pro {
+  background: linear-gradient(135deg, #a2a7f0 0%, #696edd 100%);
+  padding-block: 54.5px;
+  border-radius: 10px;
+}
+
+.left {
+  border-radius: 10px 0 0 10px;
+}
+
+.right {
+  border-radius: 0 10px 10px 0;
+}
+
+.line {
+  border-top: 1px solid #ffffff;
 }

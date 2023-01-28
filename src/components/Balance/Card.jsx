@@ -1,5 +1,6 @@
 import Button from '../Button'
 import styles from './Card.module.scss'
+import clsx from 'clsx'
 
 export default function Card({
   title,
@@ -15,26 +16,14 @@ export default function Card({
   const whiteColorStyle = {
     color: '#ffffff',
   }
-  function getRadius() {
-    if (isLeft) {
-      return '10px 10px 0 0'
-    } else if (isRight) {
-      return '0 0 10px 10px'
-    } else {
-      return '10px'
-    }
-  }
 
   return (
     <section
-      className={`${styles.card}${isPro ? '' : ` ${styles.empty}`}`}
-      style={
-        isPro && {
-          background: 'linear-gradient(135deg, #a2a7f0 0%, #696edd 100%)',
-          paddingBlock: '54.5px',
-          borderRadius: getRadius(),
-        }
-      }>
+      className={clsx(styles.card, {
+        [styles.pro]: isPro,
+        [styles.left]: isLeft,
+        [styles.right]: isRight,
+      })}>
       <h2 className={styles.title} style={isPro && whiteColorStyle}>
         {title}
       </h2>
@@ -46,20 +35,35 @@ export default function Card({
           {isToggled ? price : (price * 10.0 + 0.09).toFixed(2)}
         </p>
       </div>
-
-      <hr />
+      <hr
+        className={clsx([styles.hr], {
+          [styles.line]: isPro,
+        })}
+      />
       <p className={styles.storage} style={isPro && whiteColorStyle}>
         {storage} Storage
       </p>
-      <hr />
+      <hr
+        className={clsx([styles.hr], {
+          [styles.line]: isPro,
+        })}
+      />
       <p className={styles.storage} style={isPro && whiteColorStyle}>
         {users} Users Allowed
       </p>
-      <hr />
+      <hr
+        className={clsx([styles.hr], {
+          [styles.line]: isPro,
+        })}
+      />
       <p className={styles.storage} style={isPro && whiteColorStyle}>
         Send up to {limit} GB
       </p>
-      <hr />
+      <hr
+        className={clsx([styles.hr], {
+          [styles.line]: isPro,
+        })}
+      />
       <Button isPro={isPro} />
     </section>
   )
