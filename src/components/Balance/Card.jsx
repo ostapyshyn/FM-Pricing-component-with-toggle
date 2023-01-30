@@ -36,7 +36,7 @@ export default function Card({
         </p>
       </div>
       <hr
-        className={clsx([styles.hr], {
+        className={clsx(styles.hr, {
           [styles.line]: isPro,
         })}
       />
@@ -44,7 +44,7 @@ export default function Card({
         {storage} Storage
       </p>
       <hr
-        className={clsx([styles.hr], {
+        className={clsx(styles.hr, {
           [styles.line]: isPro,
         })}
       />
@@ -52,7 +52,7 @@ export default function Card({
         {users} Users Allowed
       </p>
       <hr
-        className={clsx([styles.hr], {
+        className={clsx(styles.hr, {
           [styles.line]: isPro,
         })}
       />
@@ -60,7 +60,7 @@ export default function Card({
         Send up to {limit} GB
       </p>
       <hr
-        className={clsx([styles.hr], {
+        className={clsx(styles.hr, {
           [styles.line]: isPro,
         })}
       />

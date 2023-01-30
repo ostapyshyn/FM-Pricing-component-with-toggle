@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import styles from './App.module.scss'
 import Card from './components/Balance'
 import Header from './components/Header'
 
@@ -7,9 +7,9 @@ function App() {
   const [isToggled, setIsToggled] = useState(false)
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Header title="Our Pricing" onToggle={setIsToggled} isToggled={isToggled} />
-      <main className="cards">
+      <main className={styles.cards}>
         <Card
           title="Basic"
           price={19.99}
