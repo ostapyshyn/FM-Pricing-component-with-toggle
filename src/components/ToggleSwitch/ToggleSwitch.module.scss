@@ -6,7 +6,12 @@
   width: 56px;
   height: 32px;
   margin-inline: 24px;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.5;
+  }
 }
+
 .toggleSwitch input[type='checkbox'] {
   display: none;
 }

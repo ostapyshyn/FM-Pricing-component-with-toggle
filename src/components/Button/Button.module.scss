@@ -12,4 +12,23 @@
   border-radius: 6px;
   padding-block: 14px;
   width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.button:hover {
+  color: #6d72de;
+  background: transparent;
+  outline: 1px solid #6d72de;
+}
+
+.pro {
+  color: #6d72de;
+  background: #ffffff;
+  transition: 0.3s;
+}
+.pro:hover {
+  background: transparent;
+  color: #ffffff;
+  outline: 1px solid #ffffff;
+  border-radius: 6px;
 }

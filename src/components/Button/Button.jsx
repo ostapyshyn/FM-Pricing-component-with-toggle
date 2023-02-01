@@ -1,10 +1,16 @@
 import React from 'react'
 import styles from './Button.module.scss'
+import clsx from 'clsx'
 
 export default function Button({ main, isPro }) {
-  return (
-    <button className={styles.button} style={isPro && { color: '#6D72DE', background: '#FFFFFF' }}>
-      Learn more
-    </button>
-  )
+  // const result = clsx({
+  //   link: true,
+  //   'link-primary': false,
+  // })
+
+  const style = clsx(styles.button, {
+    [styles.pro]: isPro,
+  })
+
+  return <button className={style}>Learn more</button>
 }

@@ -58,8 +58,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #f7f7fe;
+  background-image: url(assets/bg-bottom.svg), url(assets/bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left, top right;
   @include mq(1012px) {
-    padding-block: 31px;
+    padding-block: 64px;
+    background-image: url(assets/bg-top.svg);
+    background-position: top -60px right -191px;
   }
 }
 
