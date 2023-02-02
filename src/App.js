@@ -4,7 +4,7 @@ import Card from './components/Balance'
 import Header from './components/Header'
 
 function App() {
-  const [isToggled, setIsToggled] = useState(false)
+  const [isToggled, setIsToggled] = useState(true)
 
   return (
     <div className={styles.App}>
